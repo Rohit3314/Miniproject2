@@ -1,0 +1,31 @@
+ATM interface
+
+Transactions History
+Withdraw
+Deposit
+Transfer
+Quit
+
+Book Store management
+
+Book search based on the price, title etc.
+Book database
+Addition and deletion of new books
+
+Student management System
+
+Profile of students
+result of all previous exams
+placement details
+
+Health care management
+
+Details of available facilities
+Availibility of beds for Critical stage patients 
+Details of Hospital
+
+Reservation of Flights/trains/Buses
+
+Book a flight/train/bus
+Delete application
+Check status
