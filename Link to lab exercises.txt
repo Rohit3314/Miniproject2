@@ -7,3 +7,5 @@ https://www.javaexamples.org/java/java.awt/setting-clipping-area-with-shape.html
 Link to Lab exercises
 
 https://personales.unican.es/corcuerp/java/Labs/LAB_17.htm
+
+http://iihm.imag.fr/Docs/java/jai1_0guide/Programming-environ.doc.html
