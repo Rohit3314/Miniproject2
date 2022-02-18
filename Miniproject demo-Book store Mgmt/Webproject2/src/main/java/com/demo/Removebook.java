@@ -1,0 +1,69 @@
+package com.demo;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/Removebook")
+public class Removebook extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+    public Removebook() 
+    {
+        super();
+      
+    }
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+		
+		
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+
+		response.setContentType("text/html");  
+        PrintWriter pw = response.getWriter();  
+        String connectionURL = "jdbc:mysql://localhost:3306/sample"; 
+        Connection connection;  
+        
+        try
+        {  
+          String Username = request.getParameter("id");  
+          String Password= request.getParameter("pass");  
+          int user = Integer.parseInt(Username);
+          Class.forName("com.mysql.jdbc.Driver");  
+          connection = DriverManager.getConnection(connectionURL, "root", "12345");  
+          String query = "delete from book1 where id ='"+user+"'";
+          PreparedStatement pst = connection.prepareStatement(query);
+     
+          int i = pst.executeUpdate();  
+          if(i!=0)
+          {  
+            pw.println("<br>Record has been deleted");  
+          }  
+          else
+          {  
+            pw.println("failed to delete the data");  
+           }  
+        }  
+        catch (Exception e)
+        {  
+          pw.println(e);  
+        }  
+	}
+
+}

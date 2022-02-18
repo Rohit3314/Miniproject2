@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Database</title>
+</head>
+<body>
+<h3> &nbsp &nbsp &nbsp &nbsp &nbsp &nbspBook Details </h3>
+<form action="./Bookdetails">
+<table>
+           <tr>
+                    <td> <h5> Username : </h5> </td>
+                    <td> <input type ="text"  name="id" > </td>
+           </tr>
+           
+            <tr>
+                    <td> <h5> Password : </h5> </td>
+                    <td> <input type ="text"  name="pass" > </td>
+           </tr>
+            <tr>
+                    <td>&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp<input type ="Submit"  value="search" > </td>
+           </tr>
+
+</table>
+</form>
+</body>
+</html>
