@@ -1,0 +1,99 @@
+<html>
+  
+<head>
+    <title>
+       Tours & Travels
+    </title>
+      
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+          
+    <style>
+              body 
+              {
+          background-image:url('one.jpg');
+        
+             }        
+        /* styling navlist */
+        #navlist {
+            background-color: #0074D9;
+            position: absolute;
+            width: 100%;
+        }
+           
+        /* styling navlist anchor element */
+        #navlist a {
+            float:left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .navlist-right{
+            float:right;
+        }
+   
+        /* hover effect of navlist anchor element */
+        #navlist a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+  
+<body>
+      
+    <!-- Navbar items -->
+    <div id="navlist">
+        <a href="Home.html">Home</a>
+        <a href="Login.html">Login</a>
+        <a href="services.html">Services</a>
+        <div class="navlist-right">
+        <a href="About.html">About Us</a>
+        <a href="Contact.html">Contact Us</a>
+        </div>
+    
+    </div>
+    <br> <br> <br>
+   
+      <h3>  Contact Us </h3>
+    
+    <div class="content">
+    <center>
+        <br><br><br><br>
+<form action="./service" method="post">
+<table>
+          
+           <tr>
+                    <td> <h5> Source: </h5> </td>
+                    <td> <input type ="text"  name="source" > </td>
+           </tr>
+           
+            <tr>
+                    <td> <h5> Destination : </h5> </td>
+                    <td> <input type ="text"  name="dest" > </td>
+           </tr>
+            <tr>
+                    <td> <h5> No. of Travellers : </h5> </td>
+                    <td> <input type ="text"  name="count" > </td>
+           </tr>
+           
+            <tr>
+                    <td> <h5> Date of Travel : </h5> </td>
+                    <td> <input type ="text"  name="date" > </td>
+           </tr>
+            <tr>
+            
+                    <td>&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp<input type ="Submit"  value="Save" > </td>
+           </tr>
+           
+              
+</table>
+</form>
+      </center> 
+    </div>
+</body>
+  
+</html>

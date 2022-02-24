@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+  <display-name>Tours&amp;Travels</display-name>
+  
+  <welcome-file-list>
+  
+    <welcome-file>Home.html</welcome-file>
+    
+  </welcome-file-list>
+  
+</web-app>
