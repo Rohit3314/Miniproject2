@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Product</title>
+</head>
+<body>
+
+  <div align="center">
+      <h2> Product details</h2>
+      
+      <table border="1">
+      <thead>
+                <tr> ID</tr>
+                <tr> Name </tr>
+               
+        <thead>
+           <tbody>
+                   <tr th:each="product1 : ${product1}">
+                   <td th:text = "${product1.id}"></td>
+                   <td th:text = "${product1.name}"></td>
+                 
+       
+           </tbody>
+       </table>
+       </div>
+
+</body>
+</html>
